@@ -156,7 +156,7 @@ body{
 }
 #portfolio {
     width: 100%;
-    background-color: #4B296B;
+    background-color: #713fa0;
     position: relative;
     z-index: 20;
     clip-path: polygon(0 0, 100% 5vw, 100% 100%, 0 calc(100% - 5vw));
@@ -179,15 +179,63 @@ body{
     flex-wrap: wrap;
     justify-content: space-evenly;
     grid-row: 3;
-    max-width: 990px;
+    max-width: 810px;
+    margin: 50px 0;
 }
 
 .item {
-    Width: 300px;
+    Width: 230px;
     height: 200px;
-    background-color: #fafafa;
+    background-color:#3B3B3B;
     border-radius: 8px;
-    margin: 15px;
+    margin: 20px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: auto 1fr;
+    overflow: hidden;
+}
+
+.image{
+    height: 130px;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.image img {
+    width: 100%;
+}
+
+.buttons {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #3B3B3B;
+}
+.button {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-decoration: none;
+    font-size: 40px;
+    color: #fafafa;
+    cursor: default;
+}
+
+.button i{
+    transition: all .5s;
+    cursor: pointer;
+}
+.button i:hover{
+    color: #D1495B;
+}
+.site {
+    font-size: 35px;
 }
 
 #footer {
