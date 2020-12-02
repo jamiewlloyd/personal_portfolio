@@ -368,8 +368,10 @@ margin-top: -5vw;
     #portfolio {
         grid-template-rows: 80px 100px auto 50px;
     }
-    .image img {
-        filter: contrast(1);
+    .item:hover img {
+        filter: contrast(0);
     }
-    
+    .contact i:hover{
+        color:#fafafa;
+    }
 }
