@@ -28,6 +28,16 @@ body{
     background: #fafafa;
 }
 
+.no_select {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 #header {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 50px;
@@ -91,7 +101,7 @@ body{
 #about {
     background-color: #048BA8;
     display: grid;
-    grid-template-rows: 50px 300px auto;
+    grid-template-rows: 50px 300px auto 100px 100px;
     align-items: center;
     justify-items: center;
     position: relative;
@@ -110,12 +120,30 @@ body{
     grid-row: 3;
     width: 80%;
     max-width: 650px;
-    padding-bottom: 150px;
+    margin-bottom: 50px;
     color: #fafafa;
     font-size: 18px;
     line-height: 1.2;    
 }
-
+.contact {
+    grid-row: 4;
+    width: 300px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.contact a {
+    text-decoration: none;
+    color: #fafafa;
+}
+.contact i{
+    font-size: 50px;
+    transition: all .5s;
+}
+.contact i:hover{
+    color:#fffd6b;
+}
 #skills {
     width: 100%;
     min-height: 700px;
@@ -128,9 +156,10 @@ body{
 
 #skills h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     letter-spacing:0.1em;
+    text-align: center;
 }
 .current {
     grid-row:2;
@@ -151,8 +180,10 @@ body{
     grid-row:6;
 }
 .skill {
- font-size: 30px;
+    width: 170px;
+ font-size: 28px;
  padding: 15px;
+ text-align: center;
 }
 #portfolio {
     width: 100%;
@@ -164,11 +195,11 @@ body{
     display: grid;
     align-items: center;
     justify-items:center;
-    grid-template-rows: 100px 150px auto 150px;
+    grid-template-rows: 100px 100px auto 150px;
 }
 .projects{
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     letter-spacing:0.1em;
     color: #fafafa;
@@ -232,7 +263,7 @@ body{
     cursor: pointer;
 }
 .button i:hover{
-    color: #D1495B;
+    color:#fffd6b;
 }
 .site {
     font-size: 35px;
